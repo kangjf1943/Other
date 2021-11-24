@@ -4,7 +4,7 @@
 # download data to work directory/UCI HAR Dataset
 
 # read the README.txt file
-readLines("UCI HAR Dataset/README.txt")
+readLines("File/UCI HAR Dataset/README.txt")
 # then we got some useful information about the files:
 # 'features.txt': List of all features
 # 'activity_labels.txt': Links the class labels with their activity name
@@ -16,13 +16,13 @@ readLines("UCI HAR Dataset/README.txt")
 
 # read the data we need and bind them
 # test after train
-subject <- rbind(read.table("UCI HAR Dataset/train/subject_train.txt"),
-                 read.table("UCI HAR Dataset/test/subject_test.txt"))
-feature <- read.table("UCI HAR Dataset/features.txt")
-activity <- rbind(read.table("UCI HAR Dataset/train/y_train.txt"),
-                  read.table("UCI HAR Dataset/test/y_test.txt"))
-data <- rbind(read.table("UCI HAR Dataset/train/X_train.txt"),
-              read.table("UCI HAR Dataset/test/X_test.txt"))
+subject <- rbind(read.table("File/UCI HAR Dataset/train/subject_train.txt"),
+                 read.table("File/UCI HAR Dataset/test/subject_test.txt"))
+feature <- read.table("File/UCI HAR Dataset/features.txt")
+activity <- rbind(read.table("File/UCI HAR Dataset/train/y_train.txt"),
+                  read.table("File/UCI HAR Dataset/test/y_test.txt"))
+data <- rbind(read.table("File/UCI HAR Dataset/train/X_train.txt"),
+              read.table("File/UCI HAR Dataset/test/X_test.txt"))
 colnames(data) <- feature$V2
 mydata_1 <- data.frame(subject = subject$V1, activity = activity$V1)
 mydata_1 <- cbind(mydata_1, data)
@@ -38,7 +38,7 @@ mydata_2 <- subset(mydata_1, select = c("subject", "activity", tar_column))
 # 3 Rename activity names ----
 # Question 3: Uses descriptive activity names to name the activities in the data set.
 # read activity label code book
-activity_label <- read.table("UCI HAR Dataset/activity_labels.txt")
+activity_label <- read.table("File/UCI HAR Dataset/activity_labels.txt")
 names(activity_label) <- c("activity", "descriptive_activity_name")
 activity_label
 mydata_3 <- merge(mydata_2, activity_label, by = "activity")
