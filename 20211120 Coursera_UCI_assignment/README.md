@@ -1,14 +1,3 @@
----
-title: "README"
-author: "Jiefeng Kang"
-date: "11/21/2021"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 # 1 Create the data set
 Question 1: Merges the training and the test sets to create one data set.
 
