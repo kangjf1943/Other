@@ -1,0 +1,2085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.1 20151215//EN" "JATS-journalpublishing1.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.1" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="publisher-id">sustainability</journal-id>
+      <journal-title-group>
+        <journal-title>Sustainability</journal-title>
+        <abbrev-journal-title abbrev-type="publisher">Sustainability</abbrev-journal-title>
+        <abbrev-journal-title abbrev-type="pubmed">Sustainability</abbrev-journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2071-1050</issn>
+      <publisher>
+        <publisher-name>MDPI</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="doi">10.3390/su10062058</article-id>
+      <article-id pub-id-type="publisher-id">sustainability-10-02058</article-id>
+      <article-categories>
+        <subj-group>
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Restoration of an Active MV Distribution Grid with a Battery ESS: A Real Case Study</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Manganelli</surname>
+            <given-names>Matteo</given-names>
+          </name>
+          <xref rid="af1-sustainability-10-02058" ref-type="aff">1</xref>
+          <xref rid="c1-sustainability-10-02058" ref-type="corresp">*</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Nicodemo</surname>
+            <given-names>Mario</given-names>
+          </name>
+          <xref rid="af1-sustainability-10-02058" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>D&#x2019;Orazio</surname>
+            <given-names>Luigi</given-names>
+          </name>
+          <xref rid="af2-sustainability-10-02058" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Pimpinella</surname>
+            <given-names>Laura</given-names>
+          </name>
+          <xref rid="af2-sustainability-10-02058" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Falvo</surname>
+            <given-names>Maria Carmen</given-names>
+          </name>
+          <xref rid="af1-sustainability-10-02058" ref-type="aff">1</xref>
+        </contrib>
+      </contrib-group>
+      <aff id="af1-sustainability-10-02058"><label>1</label>Department of Astronautical, Electrical and Energy Engineering, Sapienza University of Rome, Rome 00184, Italy</aff>
+      <aff id="af2-sustainability-10-02058"><label>2</label>e-distribuzione, Rome 00198, Italy; luigi.d&#x2019</aff>
+      <author-notes>
+        <corresp id="c1-sustainability-10-02058"><label>*</label>Correspondence: <email>matteo.manganelli@uniroma1.it</email>; Tel.: +39-06-4458-5809</corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>17</day>
+        <month>06</month>
+        <year>2018</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <month>06</month>
+        <year>2018</year>
+      </pub-date>
+      <volume>10</volume>
+      <issue>6</issue>
+      <elocation-id>2058</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>26</day>
+          <month>04</month>
+          <year>2018</year>
+        </date>
+        <date date-type="accepted">
+          <day>15</day>
+          <month>06</month>
+          <year>2018</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; 2018 by the authors.</copyright-statement>
+        <copyright-year>2018</copyright-year>
+        <license license-type="open-access">
+          <license-p>Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<ext-link ext-link-type="uri" xlink:href="http://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>In order to improve power system operation, Battery Energy Storage Systems (BESSs) have been installed in high voltage/medium voltage stations by Distribution System Operators (DSOs) around the world. Support for restoration of MV distribution networks after a blackout or HV interruption is among the possible new functionalities of BESSs. With the aim to improve quality of service, the present paper investigates whether a BESS, installed in the HV/MV substation, can improve the restoration process indicators of a distribution grid. As a case study, an actual active distribution network of <italic>e-distribuzione</italic>, the main Italian DSO, has been explored. The existing network is located in central Italy. It supplies two municipalities of approximately 10,000 inhabitants and includes renewable generation plants. Several configurations are considered, based on: the state of the grid at blackout time; the BESS state of charge; and the involvement of Dispersed Generation (DG) in the restoration process. Three restoration plans (RPs) have been defined, involving the BESS alone, or in coordination with DG. A MATLAB<sup>&#xAE;</sup>/Simulink<sup>&#xAE;</sup> program has been designed to simulate the restoration process in each configuration and restoration plan. The results show that the BESS improves restoration process quality indicators in different simulated configurations, allowing the operation in controlled island mode of parts of distribution grids, during interruptions or blackout conditions. The defined restoration plans set the priority and the sequence of controlled island operations of parts of the grid to ensure a safe and better restoration. In conclusion, the results demonstrate that a BESS can be a valuable element towards an improved restoration procedure.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>battery energy storage system</kwd>
+        <kwd>black start</kwd>
+        <kwd>dispersed generation</kwd>
+        <kwd>medium voltage distribution grid</kwd>
+        <kwd>smart grid</kwd>
+      </kwd-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec id="sec1-sustainability-10-02058" sec-type="intro">
+      <title>1. Introduction</title>
+      <p>The application of Battery Energy Storage Systems (BESSs) in power systems has increasingly gained attention over the last years. The reasons encompass functions, services and benefits that they can bring to power system operation [<xref ref-type="bibr" rid="B1-sustainability-10-02058">1</xref>,<xref ref-type="bibr" rid="B2-sustainability-10-02058">2</xref>,<xref ref-type="bibr" rid="B3-sustainability-10-02058">3</xref>], e.g., peak shaving [<xref ref-type="bibr" rid="B4-sustainability-10-02058">4</xref>,<xref ref-type="bibr" rid="B5-sustainability-10-02058">5</xref>,<xref ref-type="bibr" rid="B6-sustainability-10-02058">6</xref>,<xref ref-type="bibr" rid="B7-sustainability-10-02058">7</xref>], voltage stability [<xref ref-type="bibr" rid="B8-sustainability-10-02058">8</xref>], market functions [<xref ref-type="bibr" rid="B9-sustainability-10-02058">9</xref>], frequency response [<xref ref-type="bibr" rid="B10-sustainability-10-02058">10</xref>,<xref ref-type="bibr" rid="B11-sustainability-10-02058">11</xref>,<xref ref-type="bibr" rid="B12-sustainability-10-02058">12</xref>,<xref ref-type="bibr" rid="B13-sustainability-10-02058">13</xref>]. BESSs are also recognized as a means to increase the level of security, reliability, flexibility and quality in power systems [<xref ref-type="bibr" rid="B14-sustainability-10-02058">14</xref>,<xref ref-type="bibr" rid="B15-sustainability-10-02058">15</xref>], especially in distribution grids: at distribution level, the spread of Dispersed Generation (DG), based on renewable energy sources (RES), has led to changes that are still hard to accurately forecast and manage.</p>
+      <p>In this framework, the installation of BESSs in High Voltage/Medium Voltage (HV/MV) stations has been recently regarded as a possible solution to many problems of the global power system (transmission and distribution). This has been favored by many Distribution System Operators (DSOs), including <italic>e-distribuzione</italic>, the largest Italian DSO by extent [<xref ref-type="bibr" rid="B16-sustainability-10-02058">16</xref>,<xref ref-type="bibr" rid="B17-sustainability-10-02058">17</xref>,<xref ref-type="bibr" rid="B18-sustainability-10-02058">18</xref>].</p>
+      <p>An additional driver for this application by <italic>e-distribuzione</italic> has been financial funding by Governments and the European Community on pilot projects aimed at testing the real performance of BESSs in smart grids [<xref ref-type="bibr" rid="B19-sustainability-10-02058">19</xref>,<xref ref-type="bibr" rid="B20-sustainability-10-02058">20</xref>]. </p>
+      <p>At the same time, in Italy, electricity market rules on the management of the power systems are evolving, according to different policies [<xref ref-type="bibr" rid="B21-sustainability-10-02058">21</xref>,<xref ref-type="bibr" rid="B22-sustainability-10-02058">22</xref>]; this evolution involves in particular DSOs and DG dispatching. In addition, a great impulse is given to investments towards smart distribution systems; i.e., distribution grids with a higher level of automation and control for guaranteeing higher level of security, reliability, flexibility and resilience of network to improve the quality of service. The Italian former regulatory Authority for electricity, gas and water system(AEEGSI), now regulatory Authority for energy, networks and the environment (ARERA) proposes these important features for development of a smart distribution system [<xref ref-type="bibr" rid="B23-sustainability-10-02058">23</xref>]: <list list-type="bullet"><list-item><p>Observability of power flows and DG</p></list-item><list-item><p>Voltage regulation at MV level</p></list-item><list-item><p>Active power regulation at user level</p></list-item><list-item><p>Remote control for the prevention of the &#x201C;unwanted island&#x201D; phenomenon</p></list-item><list-item><p>Advanced operation of MV grids</p></list-item><list-item><p>The use of ESSs</p></list-item></list></p>
+      <p>In the same document, AEEG-SI defines the possible functionalities for BESS already installed in HV/MV stations for smart grid pilot projects:<list list-type="bullet"><list-item><p>Energy exchange profile levelling (active power control) with the HV network, for the reduction and better management of the variability of the DG</p></list-item><list-item><p>Power factor correction and/or the voltage control (reactive power control)</p></list-item><list-item><p>Back-up function for short interruption</p></list-item><list-item><p>Black-start function of limited portions of grid</p></list-item><list-item><p>Management and control of electric vehicles charging stations (if owned by the DSO)</p></list-item></list></p>
+      <p>Thus, among all the functionalities of BESSs, there is the support to power system restoration after a blackout or an interruption of a HV/MV station. Indeed, the BESS charging/discharging flexibility can help keep the balance between power supply and demand during the system restoration process, working as the slack bus in the absence of the main grid. </p>
+      <p>Given this background, the application of BESSs in power system restoration is worth investigation. In scientific literature, only few papers (e.g., [<xref ref-type="bibr" rid="B24-sustainability-10-02058">24</xref>,<xref ref-type="bibr" rid="B25-sustainability-10-02058">25</xref>,<xref ref-type="bibr" rid="B26-sustainability-10-02058">26</xref>,<xref ref-type="bibr" rid="B27-sustainability-10-02058">27</xref>,<xref ref-type="bibr" rid="B28-sustainability-10-02058">28</xref>]) deal with this specific issue, while a large amount of research work has been focused on BESS charging/discharging control, mitigating the intermittent power generation of renewable energy sources. In [<xref ref-type="bibr" rid="B29-sustainability-10-02058">29</xref>], the potential roles of BESSs in power system restoration are deeply discussed and a detailed control strategy for the BESSs during the restoration period is also developed, while mentioning pros and cons of the adopted approach. Restoration problems are generally addressed by adopting different mathematical techniques able to define a reconfiguration of the electric grid, while satisfying its constraints. In [<xref ref-type="bibr" rid="B30-sustainability-10-02058">30</xref>], an overview of such techniques has been explained: from deterministic mathematical programming, to heuristics and knowledge-based systems. However, neither distribution system operator regulatory constraints nor real scale application of the proposed mathematical techniques have been taken into account, on the grounds that there is no experience on the matter.</p>
+      <p>The focus of this paper is the study of the use of a BESS in HV/MV station of a real active distribution grid to support the restoration of the system after a blackout on the HV side or an interruption, according to the actual regulation and technologies available on the physical system. As explained in the paper, the analyses have been carried out with reference to a specific real case study: the purpose is to verify if restoration network plans, developed according to the actual rules of operation of distribution grids and available controls resources, can ensure a more secure operation of a real distribution system and to improve the quality of service (i.e., reduction of time of outage and number of customers not supplied during the HV interruption). The validation has been performed in steady state operation, verifying power balance and compliance with voltage and current constraints in all the components of the system (including BESS). Issues related to the transients and frequency and voltage controls are neglected at this stage of the work.</p>
+    </sec>
+    <sec id="sec2-sustainability-10-02058">
+      <title>2. Present Operation Procedure of Distribution Grids during a Blackout or Interruption (without BESS) </title>
+      <p>As is well known, the Italian MV distribution system is connected to National Transmission System via HV/MV stations owned by DSOs. The distribution network operates with a radial scheme, as shown in <xref ref-type="fig" rid="sustainability-10-02058-f001">Figure 1</xref>.</p>
+      <p>During a perturbation or fault, in case of intervention of HV protection systems, it is possible to have a consequent outage of one or more HV/MV stations. The interruptions or blackout due to an event on the transmission system determines a contribution to the Energy Not Supplied (<italic>ENS</italic>) index, defined as:<disp-formula id="FD1-sustainability-10-02058"><label>(1)</label><mml:math display="block" id="mm1"><mml:semantics><mml:mrow><mml:mi>E</mml:mi><mml:mi>N</mml:mi><mml:mi>S</mml:mi><mml:mo>=</mml:mo><mml:msub><mml:mi>P</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>n</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo stretchy="false">(</mml:mo><mml:msubsup><mml:mi>T</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>n</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mi>e</mml:mi></mml:msubsup><mml:mo>&#x2212;</mml:mo><mml:msubsup><mml:mi>T</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>n</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mi>s</mml:mi></mml:msubsup><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+	  where <inline-formula><mml:math id="mm2" display="block"><mml:semantics><mml:mrow><mml:msub><mml:mi>P</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>n</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>&#xA0;</mml:mo></mml:mrow></mml:semantics></mml:math></inline-formula> is the mean power sampled value of the last 15 min at HV level at the time of interruption (this value is assumed constant for the duration of the event); <inline-formula><mml:math id="mm3" display="block"><mml:semantics><mml:mrow><mml:msubsup><mml:mi>T</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>n</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mi>e</mml:mi></mml:msubsup></mml:mrow></mml:semantics></mml:math></inline-formula> is the event ending time; <inline-formula><mml:math id="mm4" display="block"><mml:semantics><mml:mrow><mml:msubsup><mml:mi>T</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>n</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mi>s</mml:mi></mml:msubsup></mml:mrow></mml:semantics></mml:math></inline-formula> is the event starting time of HV interruption or blackout.</p>
+      <p>Considering the Italian Grid Code on the continuity of supply [<xref ref-type="bibr" rid="B31-sustainability-10-02058">31</xref>], the share of <italic>ENS</italic>, defined in (1), contributing to the continuity of supply index, has to be evaluated as a net value of Energy Not Supplied <inline-formula><mml:math id="mm5" display="block"><mml:semantics><mml:mrow><mml:mi>E</mml:mi><mml:mi>N</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mrow><mml:mi>n</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:semantics></mml:math></inline-formula> given by:<disp-formula id="FD2-sustainability-10-02058"><label>(2)</label><mml:math display="block" id="mm6"><mml:semantics><mml:mrow><mml:mi>E</mml:mi><mml:mi>N</mml:mi><mml:msub><mml:mi>S</mml:mi><mml:mrow><mml:mi>n</mml:mi><mml:mi>e</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mi>E</mml:mi><mml:mi>N</mml:mi><mml:mi>S</mml:mi><mml:mo>&#x2212;</mml:mo><mml:msub><mml:mi>E</mml:mi><mml:mrow><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi><mml:mi>D</mml:mi><mml:mi>S</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:semantics></mml:math></disp-formula>
+	  where <inline-formula><mml:math id="mm7" display="block"><mml:semantics><mml:mrow><mml:msub><mml:mi>E</mml:mi><mml:mrow><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi><mml:mo>&#xA0;</mml:mo><mml:mi>D</mml:mi><mml:mi>S</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:semantics></mml:math></inline-formula> is the amount of energy that can be restored by the distribution system. This is calculated as:<disp-formula id="FD3-sustainability-10-02058"><label>(3)</label><mml:math display="block" id="mm8"><mml:semantics><mml:mrow><mml:msub><mml:mi>E</mml:mi><mml:mrow><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi><mml:mi>D</mml:mi><mml:mi>S</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:msub><mml:mi>P</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>n</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub></mml:mrow><mml:mrow><mml:msubsup><mml:mi>N</mml:mi><mml:mrow><mml:mi>c</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:mi>T</mml:mi><mml:mi>O</mml:mi><mml:mi>T</mml:mi></mml:mrow></mml:msubsup></mml:mrow></mml:mfrac><mml:mstyle displaystyle="true"><mml:munderover><mml:mo>&#x2211;</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:msubsup><mml:mi>M</mml:mi><mml:mrow><mml:mi>T</mml:mi><mml:mi>O</mml:mi><mml:mi>T</mml:mi></mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msubsup></mml:mrow></mml:munderover><mml:mrow><mml:mo stretchy="false">[</mml:mo><mml:msubsup><mml:mi>N</mml:mi><mml:mrow><mml:mi>c</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>l</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi><mml:mi>e</mml:mi><mml:mi>r</mml:mi><mml:mtext>&#x2009;</mml:mtext><mml:mi>i</mml:mi></mml:mrow></mml:msubsup><mml:mo stretchy="false">(</mml:mo><mml:msubsup><mml:mi>T</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mtext>&#x2009;</mml:mtext><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>l</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi><mml:mi>e</mml:mi><mml:mi>r</mml:mi><mml:mtext>&#x2009;</mml:mtext><mml:mi>i</mml:mi></mml:mrow></mml:msubsup><mml:mo>&#x2212;</mml:mo><mml:msubsup><mml:mi>T</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mtext>&#x2009;</mml:mtext><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>l</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi><mml:mi>e</mml:mi><mml:mi>r</mml:mi><mml:mtext>&#x2009;</mml:mtext><mml:mi>i</mml:mi></mml:mrow></mml:msubsup><mml:mo stretchy="false">)</mml:mo><mml:mo stretchy="false">]</mml:mo></mml:mrow></mml:mstyle></mml:mrow></mml:semantics></mml:math></disp-formula>
+	  where <inline-formula><mml:math id="mm9" display="block"><mml:semantics><mml:mrow><mml:msubsup><mml:mi>N</mml:mi><mml:mrow><mml:mi>c</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:mi>T</mml:mi><mml:mi>O</mml:mi><mml:mi>T</mml:mi></mml:mrow></mml:msubsup></mml:mrow></mml:semantics></mml:math></inline-formula> is the total number of LV and MV customers resupplied during the restoration activities: <disp-formula id="FD4-sustainability-10-02058"><label>(4)</label><mml:math display="block" id="mm10"><mml:semantics><mml:mrow><mml:msubsup><mml:mi>N</mml:mi><mml:mrow><mml:mi>c</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:mi>T</mml:mi><mml:mi>O</mml:mi><mml:mi>T</mml:mi></mml:mrow></mml:msubsup><mml:mo>=</mml:mo><mml:mstyle displaystyle="true"><mml:munderover><mml:mo>&#x2211;</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mrow><mml:msubsup><mml:mi>M</mml:mi><mml:mrow><mml:mi>T</mml:mi><mml:mi>O</mml:mi><mml:mi>T</mml:mi></mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>l</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi><mml:mi>e</mml:mi><mml:mi>r</mml:mi></mml:mrow></mml:msubsup></mml:mrow></mml:munderover><mml:mrow><mml:mo stretchy="false">(</mml:mo><mml:msubsup><mml:mi>N</mml:mi><mml:mrow><mml:mi>c</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>l</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi><mml:mi>e</mml:mi><mml:mi>r</mml:mi><mml:mtext>&#x2009;</mml:mtext><mml:mi>i</mml:mi></mml:mrow></mml:msubsup><mml:mo stretchy="false">)</mml:mo></mml:mrow></mml:mstyle></mml:mrow></mml:semantics></mml:math></disp-formula>
+	  where <inline-formula><mml:math id="mm11" display="block"><mml:semantics><mml:mrow><mml:mo>&#xA0;</mml:mo><mml:msubsup><mml:mi>M</mml:mi><mml:mrow><mml:mi>T</mml:mi><mml:mi>O</mml:mi><mml:mi>T</mml:mi></mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>l</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi><mml:mi>e</mml:mi><mml:mi>r</mml:mi></mml:mrow></mml:msubsup></mml:mrow></mml:semantics></mml:math></inline-formula> is the total number of cluster of customers restored, <inline-formula><mml:math id="mm12" display="block"><mml:semantics><mml:mrow><mml:msubsup><mml:mi>N</mml:mi><mml:mrow><mml:mi>c</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>l</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi><mml:mi>e</mml:mi><mml:mi>r</mml:mi><mml:mo>&#xA0;</mml:mo><mml:mi>i</mml:mi></mml:mrow></mml:msubsup><mml:mo>&#xA0;</mml:mo></mml:mrow></mml:semantics></mml:math></inline-formula> is the number of the customers of <italic>i</italic>-th cluster of restoration, with a <inline-formula><mml:math id="mm13" display="block"><mml:semantics><mml:mrow><mml:msubsup><mml:mi>T</mml:mi><mml:mrow><mml:mi>s</mml:mi><mml:mo>&#xA0;</mml:mo><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>l</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi><mml:mi>e</mml:mi><mml:mi>r</mml:mi><mml:mo>&#xA0;</mml:mo><mml:mi>i</mml:mi></mml:mrow></mml:msubsup><mml:mo>&#xA0;</mml:mo></mml:mrow></mml:semantics></mml:math></inline-formula> restoration starting time and <inline-formula><mml:math id="mm14" display="block"><mml:semantics><mml:mrow><mml:msubsup><mml:mi>T</mml:mi><mml:mrow><mml:mi>e</mml:mi><mml:mo>&#xA0;</mml:mo><mml:mi>r</mml:mi><mml:mi>e</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mrow><mml:mi>c</mml:mi><mml:mi>l</mml:mi><mml:mi>u</mml:mi><mml:mi>s</mml:mi><mml:mi>t</mml:mi><mml:mi>e</mml:mi><mml:mi>r</mml:mi><mml:mo>&#xA0;</mml:mo><mml:mi>i</mml:mi></mml:mrow></mml:msubsup></mml:mrow></mml:semantics></mml:math></inline-formula> restoration ending time; this is equal, for each cluster of customers, to the interruption ending time <inline-formula><mml:math id="mm15" display="block"><mml:semantics><mml:mrow><mml:msubsup><mml:mi>T</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>n</mml:mi><mml:mi>t</mml:mi></mml:mrow><mml:mi>e</mml:mi></mml:msubsup></mml:mrow></mml:semantics></mml:math></inline-formula>. <inline-formula><mml:math id="mm16" display="block"><mml:semantics><mml:mrow><mml:msub><mml:mi>P</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mi>n</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:semantics></mml:math></inline-formula> is defined in (1). In this way, the term in (3) expresses an equivalent time of interruption. Equations (2)&#x2013;(4) are graphically illustrated in <xref ref-type="fig" rid="sustainability-10-02058-f002">Figure 2</xref>. </p>
+      <p>Due to the necessity of reducing the value of <italic>ENS</italic>, the same Grid Code in [<xref ref-type="bibr" rid="B31-sustainability-10-02058">31</xref>] foresees actions based on an interaction and cooperation between TSO and DSO, e.g.:<list list-type="bullet"><list-item><p>The evaluation of the entity of system involved by the event (line, power plants, HV substation, etc.); this action is a responsibility of the TSO</p></list-item><list-item><p>In case of fault, the localization of elements of HV network (line, pole, transformer, etc.); this action is a responsibility of TSO and DSO</p></list-item><list-item><p>The evaluation of the possibility of rearranging the HV network scheme, restoring the voltage for all plants and stations; this action is a responsibility of TSO and DSO</p></list-item></list></p>
+      <p>If it is not possible to restore shortly (within some minutes) the voltage at the HV station, the TSO can require the DSO to restart the MV network independently. The main actions executed by the DSO are:<list list-type="bullet"><list-item><p>Evaluation of network capacity to provide the restoring service, i.e., reserve of power on the same grid, considering the margin of current referred to the thermal limit of the feeders; flexibility in terms of remote control system of the same grid, considering the possibility to arrange a new scheme of distribution network</p></list-item><list-item><p>Application of restoration plans; this phase is carried out via the remote-control system</p></list-item><list-item><p>Monitoring and supervision of network, in case of evolution into critical states (overloads, faults, etc.)</p></list-item></list></p>
+      <p>This operation condition increases the risk for the DSO to have an interruption of service, with relevant contribution to the value of System Average Interruption Duration Index (SAIDI) and System Average Interruption Frequency Index (SAIFI), the regulated indexes for the assessment of continuity of the service for the distribution operator [<xref ref-type="bibr" rid="B32-sustainability-10-02058">32</xref>,<xref ref-type="bibr" rid="B33-sustainability-10-02058">33</xref>,<xref ref-type="bibr" rid="B34-sustainability-10-02058">34</xref>]. </p>
+      <p>As well known, the scheme of network operation, during supply restoration, is much different from the normal condition. The main factors to consider are: <list list-type="bullet"><list-item><p>The probability that a fault arises, due to the increasing of number of kilometers of grid subtended to the same breaker</p></list-item><list-item><p>The level of damage in case of interruption, due to the increasing of number of customers subtended to the same breaker</p></list-item></list></p>
+      <p>It is obvious that both mentioned parameters are higher with respect to the normal operating condition of the network, increasing the risk of a service interruption. </p>
+      <p>In this framework, a BESS in MV can help the restoration procedure, acting as a slack bus between electricity supply and demand and thus increasing the flexibility of the grid: it can drive the controlled power grid, sustaining the consumption and allowing, whenever possible, the synchronization of DG. Moreover, BESSs and DGs, possibly operate in coordination with each other, contribute to risk mitigation. As a matter of fact, in the traditional service restoration a fault occurred on portion of the network determines an outage on both the restored and restoring grids; on the other hand, adopting a BESS on the MV bus-bar, both grids are decoupled and independent of each other in terms of fault selection and service restoration.</p>
+      <p>On these grounds, an actual suitable case study of <italic>e-distribuzione</italic>&#x2019;s MV active grid equipped with a BESS has been selected, in order to quantitatively verify how the involvement of a BESS in the restoration procedure can improve the quality of service. The case study here reported is just a first example of application, in order to have numerical evidence of the proposal in a real specific case, but it can be generalized in the future. In addition, it is worth to stress that the analyses deal with the steady state operation of the grid, disregarding any issue related to transients, frequency and voltage control. </p>
+    </sec>
+    <sec id="sec3-sustainability-10-02058">
+      <title>3. Simulation Process</title>
+      <p>The simulation of the Restoration Plans (RPs) was carried out via a MATLAB<sup>&#xAE;</sup>/Simulink<sup>&#xAE;</sup> program, developed for the purpose, consisting in a model of the network in steady-state and in a routine for the execution of multi-period PFA. In addition, a MATPOWER program was used for comparison for the validation of PFA [<xref ref-type="bibr" rid="B35-sustainability-10-02058">35</xref>]. The simulations were carried out for the purpose of verifying if the RPs network proposed are able to ensure a secure operation of the distribution system. The validation in steady state has been performed, verifying the power balance and compliance with voltage and current constraints in all system components (including BESS). Issues related to the transients and to frequency and voltage control have been disregarded at this stage.</p>
+      <p>The developed MATLAB<sup>&#xAE;</sup>/Simulink<sup>&#xAE;</sup> program is linked to a spreadsheet (e.g. MS Excel<sup>&#xAE;</sup>) with network data and operates as follows:<list list-type="bullet"><list-item><p>Imports network data from spreadsheet in MATLAB<sup>&#xAE;</sup></p></list-item><list-item><p>Runs a Power Flow Analysis (PFA) in the Simulink<sup>&#xAE;</sup> network model for each time-step (15 min)</p></list-item><list-item><p>Outputs the results to MATLAB<sup>&#xAE;</sup> and exports them to spreadsheet</p></list-item></list></p>
+      <p>For each of three RPs, the values and issues assessed in the procedure are:<list list-type="bullet"><list-item><p>The time of blackout (<italic>t</italic>&#x2032;)</p></list-item><list-item><p>The active power demand in the HV/MV station at the time of the blackout (<italic>P</italic>&#x2032;<italic><sub>TOT</sub></italic>)</p></list-item><list-item><p>The number of red LV and MV users (<italic>N<sub>LVcust</sub></italic><sup>(<italic>i</italic>)</sup>, <italic>N<sub>MVcust</sub></italic><sup>(<italic>i</italic>)</sup>) with respective active power (<italic>P<sub>LVcust</sub></italic><sup>(<italic>i</italic>)</sup>, <italic>P<sub>MVcust</sub></italic> <sup>(<italic>i</italic>)</sup>) at stage <italic>i</italic></p></list-item><list-item><p>The state of charge of the BESS in different stages (<italic>SOC<sub>BESS</sub></italic><sup>(<italic>i</italic>)</sup>)</p></list-item><list-item><p>The percentage of re-fed network, defined as the ratio of the number of re-fed customers to the total number of customers to be re-fed:</p></list-item></list></p>
+      <disp-formula id="FD5-sustainability-10-02058">
+        <label>(5)</label>
+        <mml:math display="block" id="mm17">
+          <mml:semantics>
+            <mml:mrow>
+              <mml:msubsup>
+                <mml:mi>n</mml:mi>
+                <mml:mo>%</mml:mo>
+                <mml:mrow>
+                  <mml:mo stretchy="false">(</mml:mo>
+                  <mml:mi>i</mml:mi>
+                  <mml:mo stretchy="false">)</mml:mo>
+                </mml:mrow>
+              </mml:msubsup>
+              <mml:mo>=</mml:mo>
+              <mml:mfrac>
+                <mml:mrow>
+                  <mml:msubsup>
+                    <mml:mi>N</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>c</mml:mi>
+                      <mml:mi>u</mml:mi>
+                      <mml:mi>s</mml:mi>
+                      <mml:mi>t</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mo stretchy="false">(</mml:mo>
+                      <mml:mi>i</mml:mi>
+                      <mml:mo stretchy="false">)</mml:mo>
+                    </mml:mrow>
+                  </mml:msubsup>
+                </mml:mrow>
+                <mml:mrow>
+                  <mml:msub>
+                    <mml:mi>N</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>c</mml:mi>
+                      <mml:mi>u</mml:mi>
+                      <mml:mi>s</mml:mi>
+                      <mml:mi>t</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                </mml:mrow>
+              </mml:mfrac>
+              <mml:mo>&#xD7;</mml:mo>
+              <mml:mn>100</mml:mn>
+              <mml:mo>=</mml:mo>
+              <mml:mfrac>
+                <mml:mrow>
+                  <mml:msubsup>
+                    <mml:mi>N</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>L</mml:mi>
+                      <mml:mi>V</mml:mi>
+                      <mml:mi>c</mml:mi>
+                      <mml:mi>u</mml:mi>
+                      <mml:mi>s</mml:mi>
+                      <mml:mi>t</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mo stretchy="false">(</mml:mo>
+                      <mml:mi>i</mml:mi>
+                      <mml:mo stretchy="false">)</mml:mo>
+                    </mml:mrow>
+                  </mml:msubsup>
+                  <mml:mo>+</mml:mo>
+                  <mml:msubsup>
+                    <mml:mi>N</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>M</mml:mi>
+                      <mml:mi>V</mml:mi>
+                      <mml:mi>c</mml:mi>
+                      <mml:mi>u</mml:mi>
+                      <mml:mi>s</mml:mi>
+                      <mml:mi>t</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mo stretchy="false">(</mml:mo>
+                      <mml:mi>i</mml:mi>
+                      <mml:mo stretchy="false">)</mml:mo>
+                    </mml:mrow>
+                  </mml:msubsup>
+                </mml:mrow>
+                <mml:mrow>
+                  <mml:msub>
+                    <mml:mi>N</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>c</mml:mi>
+                      <mml:mi>u</mml:mi>
+                      <mml:mi>s</mml:mi>
+                      <mml:mi>t</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                </mml:mrow>
+              </mml:mfrac>
+              <mml:mo>&#xD7;</mml:mo>
+              <mml:mn>100</mml:mn>
+              <mml:mo>;</mml:mo>
+            </mml:mrow>
+          </mml:semantics>
+        </mml:math>
+      </disp-formula>
+      <list list-type="bullet">
+        <list-item>
+          <p>The percentage of LV customers re-fed in any stage in respect of the total number of LV customers to be re-fed:</p>
+        </list-item>
+      </list>
+      <disp-formula id="FD6-sustainability-10-02058">
+        <label>(6)</label>
+        <mml:math display="block" id="mm18">
+          <mml:semantics>
+            <mml:mrow>
+              <mml:msubsup>
+                <mml:mi>n</mml:mi>
+                <mml:mrow>
+                  <mml:mi>L</mml:mi>
+                  <mml:mi>V</mml:mi>
+                  <mml:mo>%</mml:mo>
+                </mml:mrow>
+                <mml:mrow>
+                  <mml:mo stretchy="false">(</mml:mo>
+                  <mml:mi>i</mml:mi>
+                  <mml:mo stretchy="false">)</mml:mo>
+                </mml:mrow>
+              </mml:msubsup>
+              <mml:mo>=</mml:mo>
+              <mml:mfrac>
+                <mml:mrow>
+                  <mml:msubsup>
+                    <mml:mi>N</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>L</mml:mi>
+                      <mml:mi>V</mml:mi>
+                      <mml:mi>c</mml:mi>
+                      <mml:mi>u</mml:mi>
+                      <mml:mi>s</mml:mi>
+                      <mml:mi>t</mml:mi>
+                    </mml:mrow>
+                    <mml:mrow>
+                      <mml:mo stretchy="false">(</mml:mo>
+                      <mml:mi>i</mml:mi>
+                      <mml:mo stretchy="false">)</mml:mo>
+                    </mml:mrow>
+                  </mml:msubsup>
+                </mml:mrow>
+                <mml:mrow>
+                  <mml:msub>
+                    <mml:mi>N</mml:mi>
+                    <mml:mrow>
+                      <mml:mi>L</mml:mi>
+                      <mml:mi>V</mml:mi>
+                      <mml:mi>c</mml:mi>
+                      <mml:mi>u</mml:mi>
+                      <mml:mi>s</mml:mi>
+                      <mml:mi>t</mml:mi>
+                    </mml:mrow>
+                  </mml:msub>
+                </mml:mrow>
+              </mml:mfrac>
+              <mml:mo>&#xD7;</mml:mo>
+              <mml:mn>100</mml:mn>
+              <mml:mo>;</mml:mo>
+            </mml:mrow>
+          </mml:semantics>
+        </mml:math>
+      </disp-formula>
+      <list list-type="bullet">
+        <list-item>
+          <p>The sequence, type and size of DG power plants reconnected at different stages</p>
+        </list-item>
+        <list-item>
+          <p>The power generated by the MV DG power plants at the stage <italic>i</italic> of reconnection, that can be injected in the distribution grid <inline-formula><mml:math id="mm19" display="block"><mml:semantics><mml:mrow><mml:msubsup><mml:mi>P</mml:mi><mml:mrow><mml:mi>M</mml:mi><mml:mi>V</mml:mi><mml:mo>&#xA0;</mml:mo><mml:mi>D</mml:mi><mml:mi>G</mml:mi></mml:mrow><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mi>i</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:msubsup></mml:mrow></mml:semantics></mml:math></inline-formula></p>
+        </list-item>
+      </list>
+      <list list-type="bullet">
+        <list-item>
+          <p>The compliance with voltage and frequency constraints in the different stages (<italic>V<sub>min</sub></italic> &lt; <italic>V</italic><sup>(<italic>i</italic>)</sup> &lt; <italic>V<sub>MAX</sub></italic>, <italic>f<sub>min</sub></italic> &lt; <italic>f</italic><sup>(<italic>i</italic>)</sup> &lt; <italic>f<sub>MAX</sub></italic>)</p>
+        </list-item>
+      </list>
+      <p>It is obvious that the parameters listed, especially those defined in (5) and (6), are strongly related to the indicators of quality of service reported in <xref ref-type="sec" rid="sec2-sustainability-10-02058">Section 2</xref> and so they can be assumed as indicators of the effectiveness of the proposed RP. A schematic of the simulation process is reported in <xref ref-type="fig" rid="sustainability-10-02058-f003">Figure 3</xref>.</p>
+      <p>The charge and discharge process of the BESS has been modeled, in steady state, by considering the amount of energy charged or discharged in every stage, plus the energy losses in each stage, via the rated charging/discharging efficiency.</p>
+    </sec>
+    <sec id="sec4-sustainability-10-02058">
+      <title>4. Case Study</title>
+      <sec id="sec4dot1-sustainability-10-02058">
+        <title>4.1. MV Grid</title>
+        <p>The reference case study is an active MV grid of <italic>e-distribuzione</italic>, connected to the HV system and to the BESS, with the layout shown in <xref ref-type="fig" rid="sustainability-10-02058-f004">Figure 4</xref>. </p>
+        <p>The HV/MV station includes one 16 MVA YYn transformer, with the neutral conductor on the MV side grounded via mobile Petersen coil. The MV bus-bar feeds 8 MV lines operated radially, in accordance with Italian distribution grid practices. Details on the composition of the MV network are reported in <xref ref-type="table" rid="sustainability-10-02058-t001">Table 1</xref> and <xref ref-type="table" rid="sustainability-10-02058-t002">Table 2</xref>. The 4 MV DG power plants are characterized in <xref ref-type="table" rid="sustainability-10-02058-t003">Table 3</xref>.</p>
+        <p>Although the lines are radially operated, there are common nodes between the different lines.  This is useful for modifying network configuration in critical operating conditions, e.g., restoration after a blackout. Concerning network automation, the remote-control system allows the supervision of the MV network and the 28 nodes Remote Control Nodes (RCNs), in addition to each line circuit breaker on the MV bus-bar. <xref ref-type="fig" rid="sustainability-10-02058-f005">Figure 5</xref> shows the RCN in each MV line of the case study; 0 denotes the RCN corresponding to the line circuit breakers at the head of line on MV bus-bar side. </p>
+        <p>The definition of the RP is based on the location of RCNs for each line, the number of MV/LV stations and MV customers, their average active and reactive power demand.</p>
+      </sec>
+      <sec id="sec4dot2-sustainability-10-02058">
+        <title>4.2. BESS and Control System</title>
+        <p>A Lithium-Ion BESS is installed in the HV/MV station and connected to the MV bus-bar via a dedicated line (Line 1). A schematic of the BESS control system and an image of the installation are presented in <xref ref-type="fig" rid="sustainability-10-02058-f006">Figure 6</xref>. The specifications of the ESS are:<list list-type="bullet"><list-item><p>BESS rated capacity: 2 MWh</p></list-item><list-item><p>BESS rated power: 2 MVA</p></list-item><list-item><p>Battery module rated voltage: 15.2 V</p></list-item><list-item><p>Battery module rated capacity: 0.625 kWh</p></list-item><list-item><p>Total efficiency: 80%</p></list-item><list-item><p>Installation: Containers (10 containers, 8 power converter systems, 3264 batteries), 400 m&#xB2;</p></list-item><list-item><p>Providers: System integrator and batteries: NEC</p></list-item><list-item><p>Technology: Li-Ion (Lithium metal oxide)</p></list-item><list-item><p>Life: 4,000 cycles, 10 years</p></list-item><list-item><p>Maximum auxiliary consumption: 787.75 kWh/day</p></list-item></list></p>
+        <p>To clarify how the proposed procedure can be then implemented in the physical system, a general description of the control architecture available in the <italic>e-distribuzione</italic> MV grid (including the BESS in HV/MV stations), is detailed. </p>
+        <p><italic>e-distribuzione</italic> MV grid management and control is in charge of 28 control centers; each one is responsible for several activities, e.g.,: quality of service certification, management of crews in the field, network and equipment predictive maintenance, and cooperation with the TSO in order to prevent blackouts and emergencies. The system is equipped with a Supervisory Control and Data Acquisition (SCADA), located in the control centers, which communicates with Remote Terminal Units (RTUs), located in the HV/MV and MV/LV stations. In case of fault on the HV grid, when the TSO requires the DSO to restore service on the MV network independently, the SCADA system is able to identify and isolate the MV network portion to be re-supplied. Consequently, the SCADA can also send the BESS a black-start remote command, making sure that all the security checks have been performed correctly. The communication architecture is based on the Client/Server model. The BESS local controller assumes the server role while, on the DSO side, there is an RTU, that assumes the client role and is remotely connected with the control center that hosts the DSO SCADA. The information exchanged between client and server is compliant with [<xref ref-type="bibr" rid="B37-sustainability-10-02058">37</xref>]. As shown in <xref ref-type="fig" rid="sustainability-10-02058-f007">Figure 7</xref>, in order to execute a black-start operation and supply power to a target load, the BESS local controller must receive voltage commands (<italic>V<sub>set</sub></italic>) for each stage from the SCADA to control the point of delivery voltages. Upon receiving <italic>V<sub>set</sub></italic> commands from the SCADA, the BESS determines the target point of delivery voltage by calculating the difference between the <italic>V<sub>set</sub></italic> values from the SCADA and the voltage values measured at point of delivery under the conditions that frequency is a constant value of 50 Hz and zero-sequence voltage is always set to zero. In order to avoid inrush current flow into the load, the BESS provides a soft start function, which increases voltage gradually according to a soft start period (e.g., from 1 s to 20 s). In this work, the system is studied in stationary state; therefore, it is assumed that the voltage is constant, imposed by the BESS, operating as the voltage regulator.</p>
+        <p>Hence, it is clear that the proposed procedure can be implemented in the physical system, both fully automated and manually guided by the system operator.</p>
+      </sec>
+      <sec id="sec4dot3-sustainability-10-02058">
+        <title>4.3. Simulation Scenarios and Hypotheses</title>
+        <p>For a given grid layout and control system, a RP of the MV grid is a function of the initial operation scenario, in terms of:<list list-type="bullet"><list-item><p>The state of the network in the time of blackout, i.e., amount of active power demanded by the loads and amount of power supplied by DG, which define the aggregate equivalent load at the MV bus-bar</p></list-item><list-item><p>The State of Charge (SOC) of the BESS at the time of the blackout</p></list-item></list></p>
+        <p>Thus, the first step to build a RP is to assume the blackout time and the BESS SOC.</p>
+        <p>For the case study, operation data for three reference days (weekday, Saturday and Sunday) in January were available. For each of them, the aggregate equivalent load at the MV bus-bar was calculated via a PFA; the results are reported in <xref ref-type="fig" rid="sustainability-10-02058-f008">Figure 8</xref>, where the sign of active power is positive when power flows from the HV side to the MV side (passive distribution network).</p>
+        <p>Comparing the profile of the three days, it is evident that the distribution grid is passive only in some hours of the weekday, due to the combination of a greater load and a minor DG production. During the two weekend days, the grid behaves mostly as an equivalent generator in respect of the HV system.</p>
+        <p>On these grounds, the choice has been to build up RP assuming the weekday as the reference case, and check its feasibility in the other two days, when the net load at the MV bus-bar is mostly negative, due to a lower passive load and a higher generation. </p>
+        <p>With reference to the weekday, two times of blackout have been considered: maximum positive net load time (2:30 p.m.) and the maximum negative net load time (6:30 p.m.), as shown in <xref ref-type="fig" rid="sustainability-10-02058-f007">Figure 7</xref>.</p>
+        <p>Another hypothesis deals with the SOC of BESS at the time of blackout. Two level of SOC have been considered: 100% and 50%.</p>
+        <p>Based on the location of RCNs, different RPs were developed, divided in 10 stages. For each stage:<list list-type="bullet"><list-item><p>The list of opening and closing operations was set with respect to the various lines</p></list-item><list-item><p>The number of LV and MV customers and DG power plants to be reconnected were defined, assuming a time interval of 30 s and 300 s, respectively</p></list-item></list></p>
+        <p>The RPs were firstly simulated, assuming the absence of MV DG, in order to verify restoration capabilities of the system using only the internal DSO sources, i.e., without local DG. The same RPs were then checked, involving the MV DG plants, in reference to a smart management of the grid. The rationale is then to shift the connection of distributed generation as much as possible, to take advantage of the storage system, eventually considering no distributed generation contribution (only energy storage contribution) in the restoration process.</p>
+        <p>The results obtained for the three RPs, built up in reference of the weekday, for the two scenarios of positive maximum and negative maximum net load, without and with DG, and in reference of different initial SOC of BESS, are reported. </p>
+        <p><xref ref-type="table" rid="sustainability-10-02058-t004">Table 4</xref> summarizes the list of RCN operation for each stage in each line for the RP1. The table is based on RP1. RPs differ according to the stage of reconnection of MV DG, i.e., RCNs 3 and 6 of line 4 are closed during Stage 3, 4 or 5, in RP1, RP2 or RP3, respectively.</p>
+      </sec>
+    </sec>
+    <sec id="sec5-sustainability-10-02058" sec-type="results">
+      <title>5. Results</title>
+      <p>In reference to the RPs, eight scenarios have been simulated and summarized in <xref ref-type="table" rid="sustainability-10-02058-t005">Table 5</xref>. </p>
+      <p>In SC1, SC2, SC5 and SC6, the three RP are equal, because the DSO is supposed to use only the BESS as source of power for the restoration; the MV DG is not included in the RPs.</p>
+      <p><xref ref-type="fig" rid="sustainability-10-02058-f009">Figure 9</xref> shows the number of LV customers guaranteed to be re-fed for each stage, when the initial SOC of the BESS is 100% (SC1 and SC2), taking into account its power capability.</p>
+      <p>At the end of the RP, it has been possible to assess that only for 81.6% in SC1 and 71% in SC2 of LV customers are guaranteed to be re-fed.</p>
+      <p>The second case is that with DG included in RPs (SC3 and SC4, SC7 and SC8), considering the possible <italic>P-f</italic> control function of DG power plants, it allows a constant reduction of injected active power in function of the frequency variation, in accordance with the regulation [<xref ref-type="bibr" rid="B21-sustainability-10-02058">21</xref>].</p>
+      <p>Independently from the initial SOC of the BESS (100% or 50%) and the time of blackout, the total restoration of the system is possible in terms of resupplying of all the customers of the grid. <xref ref-type="fig" rid="sustainability-10-02058-f010">Figure 10</xref> shows the comparison of the three RPs in terms of <inline-formula><mml:math id="mm20" display="block"><mml:semantics><mml:mrow><mml:msubsup><mml:mi>n</mml:mi><mml:mo>%</mml:mo><mml:mrow><mml:mrow><mml:mo>(</mml:mo><mml:mi>i</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:msubsup></mml:mrow></mml:semantics></mml:math></inline-formula> for each stage.</p>
+      <p>This is because the DG is able to deliver large amounts of power, supporting the BESS in load supplying and charging the BESS itself. In particular, <xref ref-type="table" rid="sustainability-10-02058-t006">Table 6</xref> provides details on which DG power plants (type, line and size) are connected to the distribution grid in each stage for RP1.</p>
+      <p><xref ref-type="fig" rid="sustainability-10-02058-f011">Figure 11</xref> shows the comparison of the three RPs in terms of power generated by the MV DG power plants at the stage <italic>i</italic> of reconnection that can be injected in the distribution grid, in different load conditions (SC3 and SC4), with an initial BESS SOC of 100%.</p>
+      <p>Obviously, if the DSO was able to directly control the power plants, the control of the amount of power injected in the system by MV DG, in coordination with the other DSO sources, could improve the efficiency the RP procedure, both in terms of stability of portion of restored network and optimization of resources utilization.</p>
+      <p>Calculating the surplus of energy generated by MV DG in each stage in different load conditions (SC3 and SC4) and not injected into the distribution grid, it is possible to know the maximum value of the initial BESS SOC that would allow its inclusion. These values have been assessed for SC3 equal to 95.4% in RP1, 97.5% in RP2 and 98% in RP3, and for SC4 equal to 73% in RP1, 76.3% in RP2 and 77.7% in RP3. These results highlight that only a good forecasting of the DG production and coordination actions between the DG and BESS would make the RPs feasible in any load conditions.</p>
+    </sec>
+    <sec id="sec6-sustainability-10-02058" sec-type="discussion">
+      <title>6. Discussion</title>
+      <p>To develop a restoration plan for a part of a MV grid it is necessary to know the network, standards, equipment and personnel. The scope of the work is to:<list list-type="bullet"><list-item><p>Develop restoration plans for the MV grid to ensure controlled island operation in each load condition</p></list-item><list-item><p>Evaluate the performance of the BESS with respect to island operation</p></list-item><list-item><p>Compile a data sheet of the restoration procedures</p></list-item></list></p>
+      <p>This has been carried out in steady state; transients will be considered in future works.</p>
+      <p>A restoration plan for the MV grid must be able to ensure controlled island operation in each load condition; therefore, among the three reference days, the weekday is considered, being the day with the most onerous load. The two extreme conditions (maximum and minimum load, at 2:30 p.m. and 6:30 p.m., respectively), were considered. Among the three developed plans, it is possible to vary the percentage of customers and the DG plants connected at each stage, via the switches at the start of the lines and the RCNs. This allows to vary the load or power injection at the MV bus-bar. The results show that all the three plans ensure controlled island operation until the end of the day. This is due to the contribution of DG, which is able to deliver a large amount of power to re-feed the grid and recharge the BESS. Compliance with grid power limit and BESS minimum SOC is crucial. The different restoration plans, varying the time of connection of DG, and configurations without DG are considered, in order to assess the BESS limit capabilities with respect to duration and grid extent. The purpose is to minimize the duration and the extent of disruption, i.e., expenditures for the DSO.</p>
+      <p>The effectiveness of the BESS in the restoration process can be expressed via the maximum duration of controlled island operation. This is affected by the load conditions of the day and the BESS SOC, as reported in <xref ref-type="table" rid="sustainability-10-02058-t007">Table 7</xref>.</p>
+      <p>To assess the extent of re-fed customers, LV customers have been considered, as they are the largest part of customers. Scenarios SC1-SC2, SC5-SC6 are those in which DG does not contribute and only the capacity of the BESS supports the RP. The constraint is not BESS energy capacity but rather power capacity (2 MVA) that limits the extent of the grid that can be supplied by the BESS (86% and 71% of customers in SC1 and SC2, respectively). If power capacity is higher, the percentage of customers that can be re-fed via the BESS obviously increases. Two approaches can be pursued: (i) in this work, the number of customers that can be re-fed, with a given power capacity of the BESS, is assessed; (ii) alternatively, the power capacity of the BESS can be increased, in order to re-feed all customers, and the consequent restoration time can be assessed.</p>
+      <p>It must be noted (see <xref ref-type="fig" rid="sustainability-10-02058-f010">Figure 10</xref>) that the different RPs can discharge the BESS in a different way at each stage, which can affect the success of the restoration. However, this is not the case if the DG supports the restoration, as this ensures the re-feeding of all customers.</p>
+      <p>Analyzing the MV DG reconnected, it is not possible to inject into the DS the total power that can be generated, due to the initial or reached BESS SOC of 100%. In other words, in RP1, independently from the SC, the <italic>P-f</italic> control function of DG power plants acts and determines a constant reduction of generated active power, in accordance with the regulation [<xref ref-type="bibr" rid="B38-sustainability-10-02058">38</xref>].</p>
+      <p>It is crucial to respect the power limit of the grid. <xref ref-type="fig" rid="sustainability-10-02058-f010">Figure 10</xref> reports a comparison of the power generated by the MV DG power plants at stage <italic>i</italic>, which can be injected in the distribution grid, in different load conditions (SC3 and SC4), for each RP. Therefore, it indicates the minimum SOC of the BESS, which must be able to absorb such power and thus energy. The minimum BESS SOC, rather than the percent charge/discharge for each stage, gives the assurance that no grid constraint is violated.</p>
+      <p>The proposed BESS complies with the Italian standard CEI-016 on connection to the MV grid. As evidenced in the results, the paper proposes a quantitative approach in steady state operation in order to assess the energy feasibility of the restoration plan via BESS. This is valuable information for any further analysis and development, in transient and fault conditions. Based on our findings, the implementation can be programmed; focused studies need to be carried out on transients, fault conditions and coordination of protection systems, in a way that the system complies with authority regulations, the national Grid Code [<xref ref-type="bibr" rid="B31-sustainability-10-02058">31</xref>] and applying national standards on connection to the MV grid [<xref ref-type="bibr" rid="B38-sustainability-10-02058">38</xref>].</p>
+    </sec>
+    <sec id="sec7-sustainability-10-02058" sec-type="conclusions">
+      <title>7. Conclusions</title>
+      <p>In recent times, an evolution on power systems has occurred, concerning e.g., the implementation of DG and ESSs, or market and operation regulations. This has involved several stakeholders, including DSOs. Many DSOs around the world, including <italic>e-distribuzione</italic> (the largest DSO in Italy), have lately been implementing BESSs in HV/MV stations, to tackle issues arising in the power system. One of the possible new functionalities that can be provided by BESSs installed in HV/MV stations is the black start of portions of grid, i.e., the support to power system restoration after a blackout or an interruption. </p>
+      <p>In the present study, the deployment of restoration plans of a distribution grid supported by a BESS is investigated. An existing distribution grid has been considered, operated by <italic>e-distribuzione</italic>. </p>
+      <p>First, it is illustrated how a BESS can support the restoration process, acting as a slack bus between electricity supply and demand. A MATLAB<sup>&#xAE;</sup>/Simulink<sup>&#xAE;</sup> program has been developed, to simulate the restoration process of the distribution grid. RPs based on the BESS utilization have been developed. Their deployment has been tested via the program, to assess their ability to ensure a secure restoration of the distribution grid. Different scenarios are considered, based on the state of the network and the BESS SOC at the time of blackout. For the purpose of this work, steady state is assumed, verifying the power balance and compliance with voltage and current constraints. The effectiveness of the RPs is assessed via indicators, e.g., the maximum duration of controlled island operation and the percentage of re-fed customers at each stage of the RP.</p>
+      <p>The results show the ability of the BESS to support controlled island operation of the grid and the feasibility of the BESS-based RPs. These findings provide a valuable knowledge base to the DSO and corroborate the concept of BESSs as a valuable support for power system reliability.</p>
+      <p>In future works, it is worth to investigate transients and voltage and frequency control, with more detailed modeling and experimental activity. Then, the proposed procedure can be implemented in the real system, once the DSO has full control of the DG, following the evolution of electricity market regulations. Finally, the developed RPs can be integrated in the DSO&#x2019;s grid management strategies, in order to direct grid investments, towards a smart grid management.</p>
+    </sec>
+  </body>
+  <back>
+    <notes>
+      <title>Author Contributions</title>
+      <p>Conceptualization, M.C.F.; Methodology, L.D., M.M. and L.P.; Software, M.N.; Validation, M.M., M.N. and L.P.; Formal Analysis, M.N.; Investigation, M.N.; Resources, L.D. and L.P.; Data Curation, M.M., L.P.; Writing&#x2014;Original Draft Preparation, M.M.; Writing&#x2014;Review &amp; Editing, M.C.F., M.M.; Visualization, M.M.; Supervision, L.D., M.M. and M.C.F.; Project Administration, L.D. and M.C.F.</p>
+    </notes>
+    <notes>
+      <title>Funding</title>
+      <p>This research received no external funding.</p>
+    </notes>
+    <notes notes-type="COI-statement">
+      <title>Conflicts of Interest</title>
+      <p>The authors declare no conflict of interest.</p>
+    </notes>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1-sustainability-10-02058">
+        <label>1.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Brenna</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Foiadelli</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Longo</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Zaninelli</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Ancillary services provided by BESS in a scenario characterized by an increasing penetration of unpredictable renewables</article-title>
+          <source>Proceedings of the 2017 IEEE PES Innovative Smart Grid Technologies Conference Europe (ISGT-Europe)</source>
+          <conf-loc>Torino, Italy</conf-loc>
+          <conf-date>26&#x2013;29 September 2017</conf-date>
+          <fpage>1</fpage>
+          <lpage>6</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B2-sustainability-10-02058">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nassuato</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Magistrati</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Marchegiani</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Brivio</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Delfanti</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Falabretti</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Merlo</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Distributed Storage for the Provision of Ancillary Services to the Main Grid: Project PRESTO</article-title>
+          <source>Energy Procedia</source>
+          <year>2016</year>
+          <volume>99</volume>
+          <fpage>182</fpage>
+          <lpage>193</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.egypro.2016.10.109</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B3-sustainability-10-02058">
+        <label>3.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Akhil</surname>
+              <given-names>A.A.</given-names>
+            </name>
+            <name>
+              <surname>Huff</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Currier</surname>
+              <given-names>A.B.</given-names>
+            </name>
+            <name>
+              <surname>Kaun</surname>
+              <given-names>B.C.</given-names>
+            </name>
+            <name>
+              <surname>Rastler</surname>
+              <given-names>D.M.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>S.B.</given-names>
+            </name>
+            <name>
+              <surname>Cotter</surname>
+              <given-names>A.L.</given-names>
+            </name>
+            <name>
+              <surname>Bradshaw</surname>
+              <given-names>D.T.</given-names>
+            </name>
+            <name>
+              <surname>Gauntlett</surname>
+              <given-names>W.D.</given-names>
+            </name>
+          </person-group>
+          <source>DOE/EPRI 2013 Electricity Storage Handbook in Collaboration with NRECA</source>
+          <comment>Sandia Report, Sand2013-5131</comment>
+          <publisher-name>Sandia National Laboratories</publisher-name>
+          <publisher-loc>Livermore, CA, USA</publisher-loc>
+          <year>2015</year>
+        </element-citation>
+      </ref>
+      <ref id="B4-sustainability-10-02058">
+        <label>4.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lin</surname>
+              <given-names>Q.</given-names>
+            </name>
+            <name>
+              <surname>Yin</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Shi</surname>
+              <given-names>D.</given-names>
+            </name>
+            <name>
+              <surname>Qu</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Huo</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Cheng</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>G.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Optimal control of battery energy storage system integrated in PV station considering peak shaving</article-title>
+          <source>Proceedings of the 2017 Chinese Automation Congress (CAC)</source>
+          <conf-loc>Jinan, China</conf-loc>
+          <conf-date>20&#x2013;22 October 2017</conf-date>
+          <fpage>2750</fpage>
+          <lpage>2754</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B5-sustainability-10-02058">
+        <label>5.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Park</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Park</surname>
+              <given-names>W.K.</given-names>
+            </name>
+          </person-group>
+          <article-title>CES peak demand shaving with energy storage system</article-title>
+          <source>Proceedings of the 2017 International Conference on Information and Communication Technology Convergence (ICTC)</source>
+          <conf-loc>Jeju, Korea</conf-loc>
+          <conf-date>18&#x2013;20 October 2017</conf-date>
+          <fpage>1124</fpage>
+          <lpage>1126</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B6-sustainability-10-02058">
+        <label>6.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dong</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Gao</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Guan</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Zhai</surname>
+              <given-names>Q.</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Storage Sizing with Peak-Shaving Policy for Wind Farm Based on Cyclic Markov Chain Model</article-title>
+          <source>IEEE Trans. Sustain. Energy</source>
+          <year>2017</year>
+          <volume>8</volume>
+          <fpage>978</fpage>
+          <lpage>989</lpage>
+          <pub-id pub-id-type="doi">10.1109/TSTE.2016.2637916</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B7-sustainability-10-02058">
+        <label>7.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nayak</surname>
+              <given-names>C.K.</given-names>
+            </name>
+            <name>
+              <surname>Nayak</surname>
+              <given-names>M.R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Optimal design of battery energy storage system for peak load shaving and time of use pricing</article-title>
+          <source>Proceedings of the 2017 Second International Conference on Electrical, Computer and Communication Technologies (ICECCT)</source>
+          <conf-loc>Coimbatore, India</conf-loc>
+          <conf-date>22&#x2013;24 February 2017</conf-date>
+          <fpage>1</fpage>
+          <lpage>7</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B8-sustainability-10-02058">
+        <label>8.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jalali</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Aldeen</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Dynamic voltage stability procurement of power systems using energy storage devices</article-title>
+          <source>Proceedings of the 2017 Australasian Universities Power Engineering Conference (AUPEC)</source>
+          <conf-loc>Melbourne, Australia</conf-loc>
+          <conf-date>19&#x2013;22 November 2017</conf-date>
+          <fpage>1</fpage>
+          <lpage>6</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B9-sustainability-10-02058">
+        <label>9.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hu</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Sarker</surname>
+              <given-names>M.R.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Wen</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>W.</given-names>
+            </name>
+          </person-group>
+          <article-title>Provision of flexible ramping product by battery energy storage in day-ahead energy and reserve markets</article-title>
+          <source>IET Gener. Transm. Distrib.</source>
+          <year>2018</year>
+          <volume>12</volume>
+          <fpage>2256</fpage>
+          <lpage>2264</lpage>
+          <pub-id pub-id-type="doi">10.1049/iet-gtd.2017.1522</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B10-sustainability-10-02058">
+        <label>10.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Gundogdu</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Gladwin</surname>
+              <given-names>D.T.</given-names>
+            </name>
+            <name>
+              <surname>Foster</surname>
+              <given-names>M.P.</given-names>
+            </name>
+            <name>
+              <surname>Stone</surname>
+              <given-names>D.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>A forecasting battery state of charge management strategy for frequency response in the UK system</article-title>
+          <source>Proceedings of the 2018 IEEE International Conference on Industrial Technology (ICIT)</source>
+          <conf-loc>Lyon, France</conf-loc>
+          <conf-date>20&#x2013;22 February 2018</conf-date>
+          <fpage>1726</fpage>
+          <lpage>1731</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B11-sustainability-10-02058">
+        <label>11.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Bahloul</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Khadem</surname>
+              <given-names>S.K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Design and control of energy storage system for enhanced frequency response grid service</article-title>
+          <source>Proceedings of the 2018 IEEE International Conference on Industrial Technology (ICIT)</source>
+          <conf-loc>Lyon, France</conf-loc>
+          <conf-date>20&#x2013;22 February 2018</conf-date>
+          <fpage>1189</fpage>
+          <lpage>1194</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B12-sustainability-10-02058">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Greenwood</surname>
+              <given-names>D.M.</given-names>
+            </name>
+            <name>
+              <surname>Lim</surname>
+              <given-names>K.Y.</given-names>
+            </name>
+            <name>
+              <surname>Patsios</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Lyons</surname>
+              <given-names>P.F.</given-names>
+            </name>
+            <name>
+              <surname>Lim</surname>
+              <given-names>Y.S.</given-names>
+            </name>
+            <name>
+              <surname>Taylor</surname>
+              <given-names>P.C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Frequency response services designed for energy storage</article-title>
+          <source>Appl. Energy</source>
+          <year>2017</year>
+          <volume>203</volume>
+          <fpage>115</fpage>
+          <lpage>127</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.apenergy.2017.06.046</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B13-sustainability-10-02058">
+        <label>13.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Adrees</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Andami</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Milanovi&#x107;</surname>
+              <given-names>J.V.</given-names>
+            </name>
+          </person-group>
+          <article-title>Comparison of dynamic models of battery energy storage for frequency regulation in power system</article-title>
+          <source>Proceedings of the 2016 18th Mediterranean Electrotechnical Conference (MELECON)</source>
+          <conf-loc>Lemesos, Cyprus</conf-loc>
+          <conf-date>18&#x2013;20 April 2016</conf-date>
+          <fpage>1</fpage>
+          <lpage>6</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B14-sustainability-10-02058">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yao</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>T.</given-names>
+            </name>
+          </person-group>
+          <article-title>Transportable Energy Storage for More Resilient Distribution Systems with Multiple Microgrids</article-title>
+          <source>IEEE Trans. Smart Grid</source>
+          <year>2018</year>
+          <pub-id pub-id-type="doi">10.1109/TSG.2018.2824820</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B15-sustainability-10-02058">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Butler-Purry</surname>
+              <given-names>K.L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Multi-Time Step Service Restoration for Advanced Distribution Systems and Microgrids</article-title>
+          <source>IEEE Trans. Smart Grid</source>
+          <year>2017</year>
+          <pub-id pub-id-type="doi">10.1109/TSG.2017.2723798</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B16-sustainability-10-02058">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Divya</surname>
+              <given-names>K.C.</given-names>
+            </name>
+            <name>
+              <surname>&#xD8;stergaard</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Battery energy storage technology for power systems&#x2014;An overview</article-title>
+          <source>Electr. Power Syst. Res.</source>
+          <year>2009</year>
+          <volume>79</volume>
+          <fpage>511</fpage>
+          <lpage>520</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.epsr.2008.09.017</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B17-sustainability-10-02058">
+        <label>17.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Falvo</surname>
+              <given-names>M.C.</given-names>
+            </name>
+            <name>
+              <surname>Manganelli</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>D&#x2019;Adamo</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>D&#x2019;Orazio</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>D&#x2019;Orinzi</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Bufano</surname>
+              <given-names>V.</given-names>
+            </name>
+          </person-group>
+          <article-title>Smart Distribution Grids: New Solutions for System Operation in Emergency Conditions</article-title>
+          <source>Proceedings of the IEEE EEEIC15 15th International Conference on Environment and Electrical Engineering</source>
+          <conf-loc>Rome, Italy</conf-loc>
+          <conf-date>10&#x2013;13 June 2015</conf-date>
+        </element-citation>
+      </ref>
+      <ref id="B18-sustainability-10-02058">
+        <label>18.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Barbetta</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Falvo</surname>
+              <given-names>M.C.</given-names>
+            </name>
+            <name>
+              <surname>D&#x2019;Adamo</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>D&#x2019;Orazio</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Duca</surname>
+              <given-names>E.</given-names>
+            </name>
+          </person-group>
+          <article-title>Energy Storage Systems and Distribution Grids: A Real Case Study in Italy</article-title>
+          <source>Proceedings of the IEEE EEEIC16 16th International Conference on Environment and Electrical Engineering</source>
+          <conf-loc>Florence, Italy</conf-loc>
+          <conf-date>7&#x2013;10 June 2016</conf-date>
+        </element-citation>
+      </ref>
+      <ref id="B19-sustainability-10-02058">
+        <label>19.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Noce</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Pimpinella</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Performances comparison inside the electric energy storage systems of ENEL distribuzione</article-title>
+          <source>Proceedings of the CIRED2015 23rd International Conference on Electricity Distribution</source>
+          <conf-loc>Lyon, France</conf-loc>
+          <conf-date>15&#x2013;18 June 2015</conf-date>
+        </element-citation>
+      </ref>
+      <ref id="B20-sustainability-10-02058">
+        <label>20.</label>
+        <element-citation publication-type="web">
+          <article-title>GRID4EU Project</article-title>
+          <comment>Available online: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.e-distribuzione.it/it/progetti-e-innovazioni/grid4eu.html" ext-link-type="uri">https://www.e-distribuzione.it/it/progetti-e-innovazioni/grid4eu.html</ext-link></comment>
+          <date-in-citation content-type="access-date" iso-8601-date="2018-06-16">(accessed on 16 June 2018)</date-in-citation>
+        </element-citation>
+      </ref>
+      <ref id="B21-sustainability-10-02058">
+        <label>21.</label>
+        <element-citation publication-type="book">
+          <source>Public Debate on the Reform of the Way of Resources Supply for Dispatching Services, with Reference to DG and Plants Powered by Non-Programmable RES</source>
+          <comment>DCO 354/2013/R/eel</comment>
+          <publisher-name>Italian Authority for Electricity, Gas and Water System</publisher-name>
+          <publisher-loc>Milan, Italy</publisher-loc>
+          <year>2013</year>
+        </element-citation>
+      </ref>
+      <ref id="B22-sustainability-10-02058">
+        <label>22.</label>
+        <element-citation publication-type="book">
+          <source>First Phase of the Reform of the Market for Ancillary Services: Participation of the Passive Customers, Renewable-Based Non-Programmable Power Plants and Distributed Generation [RDE-1]</source>
+          <comment>DCO 298/2016/R/EEL</comment>
+          <publisher-name>Italian Authority for Electricity, Gas and Water System</publisher-name>
+          <publisher-loc>Milan, Italy</publisher-loc>
+          <year>2016</year>
+        </element-citation>
+      </ref>
+      <ref id="B23-sustainability-10-02058">
+        <label>23.</label>
+        <element-citation publication-type="book">
+          <source>Smart Distribution System: Selective Promotion of Investment in Innovative Systems for the Electricity Distribution</source>
+          <comment>DCO 255/2015/R/EEL</comment>
+          <publisher-name>Italian Authority for Electricity, Gas and Water System</publisher-name>
+          <publisher-loc>Milan, Italy</publisher-loc>
+          <year>2015</year>
+        </element-citation>
+      </ref>
+      <ref id="B24-sustainability-10-02058">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Song</surname>
+              <given-names>I.K.</given-names>
+            </name>
+            <name>
+              <surname>Jung</surname>
+              <given-names>W.W.</given-names>
+            </name>
+            <name>
+              <surname>Kim</surname>
+              <given-names>J.Y.</given-names>
+            </name>
+            <name>
+              <surname>Yun</surname>
+              <given-names>S.Y.</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>J.H.</given-names>
+            </name>
+            <name>
+              <surname>Ahn</surname>
+              <given-names>S.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Operation schemes of smart distribution network with distributed energy resources for loss reduction and service restoration</article-title>
+          <source>IEEE Trans. Smart Grid</source>
+          <year>2013</year>
+          <volume>4</volume>
+          <fpage>367</fpage>
+          <lpage>374</lpage>
+          <pub-id pub-id-type="doi">10.1109/TSG.2012.2233770</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B25-sustainability-10-02058">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moreira</surname>
+              <given-names>C.L.</given-names>
+            </name>
+            <name>
+              <surname>Resende</surname>
+              <given-names>F.O.</given-names>
+            </name>
+            <name>
+              <surname>Peas</surname>
+              <given-names>L.A.</given-names>
+            </name>
+          </person-group>
+          <article-title>Using low voltage microgrids for service restoration</article-title>
+          <source>IEEE Trans. Power Syst.</source>
+          <year>2007</year>
+          <volume>22</volume>
+          <fpage>395</fpage>
+          <lpage>403</lpage>
+          <pub-id pub-id-type="doi">10.1109/TPWRS.2006.888989</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B26-sustainability-10-02058">
+        <label>26.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kadel</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Zhou</surname>
+              <given-names>Q.</given-names>
+            </name>
+          </person-group>
+          <article-title>On battery storage system for load pickup in power system restoration</article-title>
+          <source>Proceedings of the IEEE Power and Energy Society (PES) General Meeting</source>
+          <conf-loc>National Harbor, MD, USA</conf-loc>
+          <conf-date>27&#x2013;31 July 2014</conf-date>
+          <fpage>1</fpage>
+          <lpage>5</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B27-sustainability-10-02058">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jiang</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>C.C.</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>Y.</given-names>
+            </name>
+          </person-group>
+          <article-title>Smart Distribution Systems</article-title>
+          <source>Energies</source>
+          <year>2016</year>
+          <volume>9</volume>
+          <pub-id pub-id-type="doi">10.3390/en9040297</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B28-sustainability-10-02058">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jiang</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>C.C.</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Luo</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Bhatt</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Uppalapati</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Forcum</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Blackstart Capability Planning for Power System Restoration</article-title>
+          <source>Int. J. Electr. Power Energy Syst.</source>
+          <year>2017</year>
+          <volume>86</volume>
+          <fpage>127</fpage>
+          <lpage>137</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ijepes.2016.10.008</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B29-sustainability-10-02058">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Wen</surname>
+              <given-names>F.</given-names>
+            </name>
+            <name>
+              <surname>Xue</surname>
+              <given-names>Y.</given-names>
+            </name>
+          </person-group>
+          <article-title>Multi-objective restoration optimisation of power systems with battery energy storage systems</article-title>
+          <source>IET Gener. Transm. Distrib.</source>
+          <year>2016</year>
+          <volume>10</volume>
+          <fpage>1749</fpage>
+          <lpage>1757</lpage>
+          <pub-id pub-id-type="doi">10.1049/iet-gtd.2015.0434</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B30-sustainability-10-02058">
+        <label>30.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Nguyen</surname>
+              <given-names>C.P.</given-names>
+            </name>
+            <name>
+              <surname>Flueck</surname>
+              <given-names>A.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Agent based restoration with distributed energy storage support in smart grids</article-title>
+          <source>IEEE Trans. Smart Grid</source>
+          <year>2012</year>
+          <volume>3</volume>
+          <fpage>1029</fpage>
+          <lpage>1038</lpage>
+          <pub-id pub-id-type="doi">10.1109/TSG.2012.2186833</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B31-sustainability-10-02058">
+        <label>31.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <collab>TERNA</collab>
+          </person-group>
+          <source>Annex 66 TERNA Network Code, Procedure for Determination of Mitigation Services from DSOs</source>
+          <publisher-name>TERNA</publisher-name>
+          <publisher-loc>Rome, Italy</publisher-loc>
+          <year>2016</year>
+        </element-citation>
+      </ref>
+      <ref id="B32-sustainability-10-02058">
+        <label>32.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <collab>Del</collab>
+          </person-group>
+          <source>646/2015/R/EEL, Output-Based Regulation Integrated Text on Services for the Distribution and the Measurement of Electricity for the Period 2016&#x2013;2023</source>
+          <publisher-name>Italian Authority for Electricity, Gas and Water System</publisher-name>
+          <publisher-loc>Milan Italy</publisher-loc>
+          <year>2015</year>
+        </element-citation>
+      </ref>
+      <ref id="B33-sustainability-10-02058">
+        <label>33.</label>
+        <element-citation publication-type="book">
+          <source>33.	C14-EQS-62-03 CEER Benchmarking Report 5.2 on the Continuity of Electricity Supply</source>
+          <publisher-name>Council of the European Energy Regulators</publisher-name>
+          <publisher-loc>Brussels, Belgium</publisher-loc>
+          <year>2015</year>
+        </element-citation>
+      </ref>
+      <ref id="B34-sustainability-10-02058">
+        <label>34.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <collab>TERNA</collab>
+          </person-group>
+          <source>Annex 54 TERNA Network Code, Classification and Registration of the Interruptions of Users Directly and Indirectly Connected to Nation Transmission Grid</source>
+          <publisher-name>TERNA</publisher-name>
+          <publisher-loc>Rome, Italy</publisher-loc>
+          <year>2016</year>
+        </element-citation>
+      </ref>
+      <ref id="B35-sustainability-10-02058">
+        <label>35.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zimmerman</surname>
+              <given-names>R.D.</given-names>
+            </name>
+            <name>
+              <surname>Murillo-S&#xE1;nchez</surname>
+              <given-names>C.E.</given-names>
+            </name>
+            <name>
+              <surname>Thomas</surname>
+              <given-names>R.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>MATPOWER: Steady-State Operations, Planning and Analysis Tools for Power Systems Research and Education</article-title>
+          <source>IEEE Trans. Power Syst.</source>
+          <year>2011</year>
+          <volume>26</volume>
+          <fpage>12</fpage>
+          <lpage>19</lpage>
+          <pub-id pub-id-type="doi">10.1109/TPWRS.2010.2051168</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B36-sustainability-10-02058">
+        <label>36.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <collab>International Electrotechnical Commission TC 120</collab>
+          </person-group>
+          <source>IEC Standard 62933-1:2018 Electrical Energy Storage (EES) Systems&#x2014;Part 1: Vocabulary</source>
+          <publisher-name>IEC</publisher-name>
+          <publisher-loc>Geneva, Switzerland</publisher-loc>
+          <year>2018</year>
+        </element-citation>
+      </ref>
+      <ref id="B37-sustainability-10-02058">
+        <label>37.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <collab>International Electrotechnical Commission</collab>
+          </person-group>
+          <source>IEC Standard 61850 Communication Networks and Systems in Substations</source>
+          <publisher-name>IEC</publisher-name>
+          <publisher-loc>Geneva, Switzerland</publisher-loc>
+          <year>2004</year>
+        </element-citation>
+      </ref>
+      <ref id="B38-sustainability-10-02058">
+        <label>38.</label>
+        <element-citation publication-type="book">
+          <person-group person-group-type="author">
+            <collab>CEI 0-16 Standard</collab>
+          </person-group>
+          <source>Reference Technical Rules for the Connection of Active and Passive Users to HV and MV Grids of Electricity Distribution Utilities, CEI CT 316</source>
+          <publisher-name>CEI</publisher-name>
+          <publisher-loc>Milan, Italy</publisher-loc>
+          <year>2014</year>
+        </element-citation>
+      </ref>
+    </ref-list>
+    <sec sec-type="display-objects">
+      <title>Figures and Tables</title>
+      <fig id="sustainability-10-02058-f001" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <p>Typical scheme of connection to the HV system of a distribution grid in Italy.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sustainability-10-02058-g001.tif"/>
+      </fig>
+      <fig id="sustainability-10-02058-f002" position="float">
+        <label>Figure 2</label>
+        <caption>
+          <p>Powers vs. times of interruption and restoration: <italic>ENS</italic> and <italic>ENS<sub>net</sub></italic> calculation [<xref ref-type="bibr" rid="B31-sustainability-10-02058">31</xref>].</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sustainability-10-02058-g002.tif"/>
+      </fig>
+      <fig id="sustainability-10-02058-f003" position="float">
+        <label>Figure 3</label>
+        <caption>
+          <p>Schematic of the simulation process.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sustainability-10-02058-g003.tif"/>
+      </fig>
+      <fig id="sustainability-10-02058-f004" position="float">
+        <label>Figure 4</label>
+        <caption>
+          <p>Case study MV grid: HV/MV stations and MV lines.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sustainability-10-02058-g004.tif"/>
+      </fig>
+      <fig id="sustainability-10-02058-f005" position="float">
+        <label>Figure 5</label>
+        <caption>
+          <p>Remote control nodes for each MV line of the case study.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sustainability-10-02058-g005a.tif"/>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sustainability-10-02058-g005b.tif"/>
+      </fig>
+      <fig id="sustainability-10-02058-f006" position="float">
+        <label>Figure 6</label>
+        <caption>
+          <p>Schematic of the BESS, based on [<xref ref-type="bibr" rid="B36-sustainability-10-02058">36</xref>] (<bold>left panel</bold>), and image of the installation (<bold>right panel</bold>).</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sustainability-10-02058-g006.tif"/>
+      </fig>
+      <fig id="sustainability-10-02058-f007" position="float">
+        <label>Figure 7</label>
+        <caption>
+          <p>Black-start control scheme for the BESS.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sustainability-10-02058-g007.tif"/>
+      </fig>
+      <fig id="sustainability-10-02058-f008" position="float">
+        <label>Figure 8</label>
+        <caption>
+          <p>Daily net active power profile at the MV bus-bar for three reference days.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sustainability-10-02058-g008.tif"/>
+      </fig>
+      <fig id="sustainability-10-02058-f009" position="float">
+        <label>Figure 9</label>
+        <caption>
+          <p>Percent of re-fed LV customers in SC1 and SC2, with respect to the total number of LV customers for each stage of the restoration plan.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sustainability-10-02058-g009.tif"/>
+      </fig>
+      <fig id="sustainability-10-02058-f010" position="float">
+        <label>Figure 10</label>
+        <caption>
+          <p>Comparison in terms of percent of customers re-fed in any stage in respect of the total number of customers.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sustainability-10-02058-g010.tif"/>
+      </fig>
+      <fig id="sustainability-10-02058-f011" position="float">
+        <label>Figure 11</label>
+        <caption>
+          <p>Comparison of the restoration plans, in terms of power generated by the MV DG power plants at the stage <italic>i</italic> of reconnection that can be injected in the distribution grid, in different load conditions (SC3 and SC4).</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="sustainability-10-02058-g011.tif"/>
+      </fig>
+      <table-wrap id="sustainability-10-02058-t001" position="float">
+        <object-id pub-id-type="pii">sustainability-10-02058-t001_Table 1</object-id>
+        <label>Table 1</label>
+        <caption>
+          <p>MV Network Composition (lines).</p>
+        </caption>
+        <table>
+          <thead>
+            <tr>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Line</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Total Length</th>
+              <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Naked Overhead Line</th>
+              <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Underground Cable</th>
+              <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Overhead Cable</th>
+            </tr>
+            <tr>
+              <th align="center" valign="middle" style="border-bottom:solid thin"> </th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">(km)</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">(km)</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">(%)</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">(km)</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">(%)</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">(km)</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">(%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle">1</td>
+              <td align="center" valign="middle">0.09</td>
+              <td align="center" valign="middle">0.00</td>
+              <td align="center" valign="middle">0.0%</td>
+              <td align="center" valign="middle">0.00</td>
+              <td align="center" valign="middle">0.0%</td>
+              <td align="center" valign="middle">0.09</td>
+              <td align="center" valign="middle">100.0%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">2</td>
+              <td align="center" valign="middle">10.48</td>
+              <td align="center" valign="middle">0.01</td>
+              <td align="center" valign="middle">0.1%</td>
+              <td align="center" valign="middle">10.15</td>
+              <td align="center" valign="middle">96.9%</td>
+              <td align="center" valign="middle">0.23</td>
+              <td align="center" valign="middle">2.2%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">3</td>
+              <td align="center" valign="middle">17.88</td>
+              <td align="center" valign="middle">1.27</td>
+              <td align="center" valign="middle">7.1%</td>
+              <td align="center" valign="middle">10.66</td>
+              <td align="center" valign="middle">59.6%</td>
+              <td align="center" valign="middle">5.95</td>
+              <td align="center" valign="middle">33.3%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">4</td>
+              <td align="center" valign="middle">19.13</td>
+              <td align="center" valign="middle">13.64</td>
+              <td align="center" valign="middle">71.3%</td>
+              <td align="center" valign="middle">2.87</td>
+              <td align="center" valign="middle">15.0%</td>
+              <td align="center" valign="middle">2.62</td>
+              <td align="center" valign="middle">13.7%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">5</td>
+              <td align="center" valign="middle">25.21</td>
+              <td align="center" valign="middle">19.51</td>
+              <td align="center" valign="middle">77.4%</td>
+              <td align="center" valign="middle">1.03</td>
+              <td align="center" valign="middle">4.1%</td>
+              <td align="center" valign="middle">4.67</td>
+              <td align="center" valign="middle">18.5%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">6</td>
+              <td align="center" valign="middle">7.68</td>
+              <td align="center" valign="middle">0.00</td>
+              <td align="center" valign="middle">0.0%</td>
+              <td align="center" valign="middle">0.00</td>
+              <td align="center" valign="middle">0.0%</td>
+              <td align="center" valign="middle">7.68</td>
+              <td align="center" valign="middle">100.0%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">7</td>
+              <td align="center" valign="middle">8.43</td>
+              <td align="center" valign="middle">0.00</td>
+              <td align="center" valign="middle">0.0%</td>
+              <td align="center" valign="middle">8.43</td>
+              <td align="center" valign="middle">100.0%</td>
+              <td align="center" valign="middle">0.00</td>
+              <td align="center" valign="middle">0.0%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">8</td>
+              <td align="center" valign="middle">0.08</td>
+              <td align="center" valign="middle">0.00</td>
+              <td align="center" valign="middle">0.0%</td>
+              <td align="center" valign="middle">0.00</td>
+              <td align="center" valign="middle">0.0%</td>
+              <td align="center" valign="middle">0.075</td>
+              <td align="center" valign="middle">100.0%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">Total</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">88.98</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">34.43</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin"> </td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">33.14</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin"> </td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">21.32</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin"> </td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <table-wrap id="sustainability-10-02058-t002" position="float">
+        <object-id pub-id-type="pii">sustainability-10-02058-t002_Table 2</object-id>
+        <label>Table 2</label>
+        <caption>
+          <p>MV Network Composition (Customers and MV/LV Stations).</p>
+        </caption>
+        <table>
+          <thead>
+            <tr>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Line</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">MV/LV Stations</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">LV Customers</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">MV Customers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle">1</td>
+              <td align="center" valign="middle">0</td>
+              <td align="center" valign="middle">0</td>
+              <td align="center" valign="middle">0</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">2</td>
+              <td align="center" valign="middle">11</td>
+              <td align="center" valign="middle">663</td>
+              <td align="center" valign="middle">0</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">3</td>
+              <td align="center" valign="middle">20</td>
+              <td align="center" valign="middle">1228</td>
+              <td align="center" valign="middle">0</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">4</td>
+              <td align="center" valign="middle">13</td>
+              <td align="center" valign="middle">1104</td>
+              <td align="center" valign="middle">1</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">5</td>
+              <td align="center" valign="middle">18</td>
+              <td align="center" valign="middle">1312</td>
+              <td align="center" valign="middle">2</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">6</td>
+              <td align="center" valign="middle">9</td>
+              <td align="center" valign="middle">1220</td>
+              <td align="center" valign="middle">0</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">7</td>
+              <td align="center" valign="middle">12</td>
+              <td align="center" valign="middle">1139</td>
+              <td align="center" valign="middle">0</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">8</td>
+              <td align="center" valign="middle">0</td>
+              <td align="center" valign="middle">0</td>
+              <td align="center" valign="middle">0</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">Total</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">83</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">6666</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">3</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <table-wrap id="sustainability-10-02058-t003" position="float">
+        <object-id pub-id-type="pii">sustainability-10-02058-t003_Table 3</object-id>
+        <label>Table 3</label>
+        <caption>
+          <p>DG Power Plants.</p>
+        </caption>
+        <table>
+          <thead>
+            <tr>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Line</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Type</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Rated Power (kVA)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle">4</td>
+              <td align="center" valign="middle">PV</td>
+              <td align="center" valign="middle">690</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">4</td>
+              <td align="center" valign="middle">Hydro</td>
+              <td align="center" valign="middle">3,000</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">5</td>
+              <td align="center" valign="middle">PV</td>
+              <td align="center" valign="middle">970</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">8 (dedicated)</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">Wind</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">4,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <table-wrap id="sustainability-10-02058-t004" position="float">
+        <object-id pub-id-type="pii">sustainability-10-02058-t004_Table 4</object-id>
+        <label>Table 4</label>
+        <caption>
+          <p>Restoration Plans Stages.</p>
+        </caption>
+        <table>
+          <thead>
+            <tr>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin"> </th>
+              <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Line 2</th>
+              <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Line 3</th>
+              <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Line 4</th>
+              <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Line 5</th>
+              <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Line 6</th>
+              <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Line 7</th>
+              <th colspan="2" align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Line 8</th>
+            </tr>
+            <tr>
+              <th align="center" valign="middle" style="border-bottom:solid thin">Stage</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">O <sup>a</sup></th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">C <sup>a</sup></th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">O</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">C</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">O</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">C</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">O</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">C</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">O</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">C</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">O</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">C</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">O</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">C</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle">1</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">0</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">2</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">3, 4, 5, 6</td>
+              <td align="center" valign="middle">0</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">3</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">3, 6</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">4</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">(3, 6) <sup>b</sup></td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">0</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">5</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">2</td>
+              <td align="center" valign="middle">0</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">(3, 6) <sup>c</sup></td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">6</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">4, 5</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">7</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">2</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">8</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">0</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">9</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">0</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">10</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">-</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">-</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">-</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">-</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">-</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">-</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">-</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">0</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">-</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">-</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">-</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">-</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">-</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">-</td>
+            </tr>
+          </tbody>
+        </table>
+        <table-wrap-foot>
+          <fn>
+            <p><sup>a</sup> O = open RCN; C = closed RCN. <sup>b</sup> Closing of RCNs 3 and 6 of Line 4 is postponed from Stage 3 to Stage 4 in RP2. <sup>c</sup> Closing of RCNs 3 and 6 of Line 4 is postponed from Stage 3 to Stage 5 in RP3.</p>
+          </fn>
+        </table-wrap-foot>
+      </table-wrap>
+      <table-wrap id="sustainability-10-02058-t005" position="float">
+        <object-id pub-id-type="pii">sustainability-10-02058-t005_Table 5</object-id>
+        <label>Table 5</label>
+        <caption>
+          <p>Simulated Scenarios in the three RPs.</p>
+        </caption>
+        <table>
+          <thead>
+            <tr>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Scenario Code </th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Time of Blackout (<italic>t</italic>&#x2032;)</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Active Power Demand in the HV/MV Station at <italic>t</italic>&#x2032; (<italic>P</italic>&#x2032;<italic><sub>TOT</sub></italic>)</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">DG Included in Restoration</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">BESS SOC at the Time of Blackout (<italic>t</italic>&#x2032;)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle">SC1</td>
+              <td align="center" valign="middle">2:30 p.m.</td>
+              <td align="center" valign="middle">+582.5 kW</td>
+              <td align="center" valign="middle">no</td>
+              <td align="center" valign="middle">100%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">SC2</td>
+              <td align="center" valign="middle">6:30 p.m.</td>
+              <td align="center" valign="middle">&#x2212;870.8 kW</td>
+              <td align="center" valign="middle">no</td>
+              <td align="center" valign="middle">100%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">SC3</td>
+              <td align="center" valign="middle">2:30 p.m.</td>
+              <td align="center" valign="middle">+582.5 kW</td>
+              <td align="center" valign="middle">yes</td>
+              <td align="center" valign="middle">100%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">SC4</td>
+              <td align="center" valign="middle">6:30 p.m.</td>
+              <td align="center" valign="middle">&#x2212;870.8 kW</td>
+              <td align="center" valign="middle">yes</td>
+              <td align="center" valign="middle">100%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">SC5</td>
+              <td align="center" valign="middle">2:30 p.m.</td>
+              <td align="center" valign="middle">+582.5 kW</td>
+              <td align="center" valign="middle">no</td>
+              <td align="center" valign="middle">50%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">SC6</td>
+              <td align="center" valign="middle">6:30 p.m.</td>
+              <td align="center" valign="middle">&#x2212;870.8 kW</td>
+              <td align="center" valign="middle">no</td>
+              <td align="center" valign="middle">50%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">SC7</td>
+              <td align="center" valign="middle">2:30 p.m.</td>
+              <td align="center" valign="middle">+582.5 kW</td>
+              <td align="center" valign="middle">yes</td>
+              <td align="center" valign="middle">50%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">SC8</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">6:30 p.m.</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">&#x2212;870.8 kW</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">yes</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">50%</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <table-wrap id="sustainability-10-02058-t006" position="float">
+        <object-id pub-id-type="pii">sustainability-10-02058-t006_Table 6</object-id>
+        <label>Table 6</label>
+        <caption>
+          <p>DG connected in Restoration Plan 1 for each stage.</p>
+        </caption>
+        <table>
+          <thead>
+            <tr>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Stage</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Type</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Line</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Rated Power (kVA)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle">1</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">2</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">3</td>
+              <td align="center" valign="middle">PV; Hydro</td>
+              <td align="center" valign="middle">4</td>
+              <td align="center" valign="middle">690; 3,000</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">4</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">5</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">6</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">7</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">8</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+              <td align="center" valign="middle">-</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">9</td>
+              <td align="center" valign="middle">PV</td>
+              <td align="center" valign="middle">5</td>
+              <td align="center" valign="middle">970</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">10</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">Wind</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">8</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">4,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <table-wrap id="sustainability-10-02058-t007" position="float">
+        <object-id pub-id-type="pii">sustainability-10-02058-t007_Table 7</object-id>
+        <label>Table 7</label>
+        <caption>
+          <p>Summary of the main results.</p>
+        </caption>
+        <table>
+          <thead>
+            <tr>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Type of Day</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Load Condition</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">SOC (%)</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">Duration (hh:mm:ss)</th>
+              <th align="center" valign="middle" style="border-top:solid thin;border-bottom:solid thin">LV Customers (%)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="center" valign="middle">Weekday</td>
+              <td align="center" valign="middle">Maximum</td>
+              <td align="center" valign="middle">100%</td>
+              <td align="center" valign="middle">1:01:55 (max)</td>
+              <td align="center" valign="middle">82%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle"> </td>
+              <td align="center" valign="middle">Minimum</td>
+              <td align="center" valign="middle">50%</td>
+              <td align="center" valign="middle">0:31:40 (min)</td>
+              <td align="center" valign="middle">71%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">Saturday</td>
+              <td align="center" valign="middle">Maximum</td>
+              <td align="center" valign="middle">100%</td>
+              <td align="center" valign="middle">1:02:26 (max)</td>
+              <td align="center" valign="middle">82%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle"> </td>
+              <td align="center" valign="middle">Minimum</td>
+              <td align="center" valign="middle">50%</td>
+              <td align="center" valign="middle">0:32:00 (min)</td>
+              <td align="center" valign="middle">70%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">Sunday</td>
+              <td align="center" valign="middle">Maximum</td>
+              <td align="center" valign="middle">100%</td>
+              <td align="center" valign="middle">1:02:10 (max)</td>
+              <td align="center" valign="middle">96%</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin"> </td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">Minimum</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">50%</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">0:31:48 (min)</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">90%</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+    </sec>
+  </back>
+</article>
