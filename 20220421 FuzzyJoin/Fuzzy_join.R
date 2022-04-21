@@ -20,11 +20,11 @@ names(target) <- "target"
 target <- data.table(target)
 
 # 基于模糊匹配进行数据匹配
-c <- data.table(sqldf("select * 
+join <- data.table(sqldf("select * 
            from origin a inner join target b
                       on a.origin like '%' || b.target || '%'", drv = "SQLite"))
 # 查看结果
-c
+join
 # 可见40条原始条目中，只有7条能够找到模糊对应的目标条目，而且是一一对应的关系
 
 # 采取另一种方法进行模糊匹配
